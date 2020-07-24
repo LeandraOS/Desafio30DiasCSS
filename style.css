@@ -1,0 +1,106 @@
+body{
+    background: #eeebec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main{
+
+    height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 80px;
+
+}
+
+
+ul li {
+
+    display: flex;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-15deg) skew(15deg);
+    
+
+}
+
+ul li span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #dd4b39;
+    height: 70px;
+    width: 70px;
+    transition: 0.3s;
+    text-align: center;
+      
+}
+
+
+ul li#youtube span{
+    background-color: #d43520;
+}
+
+ul li#github span{
+    background-color: #24292e;;
+}
+ul li#google span{
+    background-color: #dd4b39;
+}
+
+ul li#linkedin span{
+    background-color: #0077b5;
+}
+
+ul li#instagram span{
+    background-color:#d15269;
+}
+
+li{
+    color: white;
+}
+
+ul li:hover span {
+    box-shadow: -2px 1px 1px rgba(0,0,0,0,0.2);
+
+}
+ul li:hover span:nth-child(5){
+    transform: translate(40px,-40px);
+    opacity: 1;
+
+}
+
+ul li:hover span:nth-child(4){
+    transform: translate(30px,-30px);
+    opacity: 0.8;
+}
+
+ul li:hover span:nth-child(3){
+    transform: translate(20px,-20px);
+    opacity: 0.6;
+}
+
+ul li:hover span:nth-child(2){
+    transform: translate(10px,-10px);
+    opacity: 0.4;
+}
+
+
+ul li:hover span:nth-child(1){
+    transform: translate(0px,0px);
+    opacity: 0.2;
+}
