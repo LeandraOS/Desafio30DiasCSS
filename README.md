@@ -1,14 +1,15 @@
 # :checkered_flag: Desafio 30 dias de CSS
 
 ## Índice
-- [Dia 1: Ícones de mídia social em camadas ](#Dia-1:-Ícones-de-mídia-social-em-camadas)
-- [Dia 2: Loader animado](Dia-2:-Loader-animado)
+
+- [Dia 01 - Ícones de mídia social em camadas](#Dia-01---Ícones-de-mídia-social-em-camadas)
+- [Dia 02 - Loader animado](#Dia-02---Loader-animado)
 
 ## :pushpin: Objetivo: 
 
 Repositório destinado a armazenar todos os trinta mini projetos produzidos durante o desafio **#30diasCSS** proposto por [Milena Carecho](https://github.com/MilenaCarecho) que tem como objetivo melhorar as habilidades dos participantes em CSS3 e HTML5 . 
 
-## Dia 1: Ícones de mídia social em camadas
+## Dia 01 - Ícones de mídia social em camadas
 
 ![dia1](https://github.com/LeandraOliveiraS/Desafio30DaysCSS/blob/master/imagens/desafio1.gif)
 
@@ -22,7 +23,7 @@ Repositório destinado a armazenar todos os trinta mini projetos produzidos dura
 - [x] Uso do `ntl-child()`
 
 
-## Dia 2: Loader animado
+## Dia 02 - Loader animado
 
 ![Dia2](https://github.com/LeandraOliveiraS/Desafio30DaysCSS/blob/master/imagens/desafio2.gif)
 
