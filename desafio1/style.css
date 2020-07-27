@@ -28,8 +28,8 @@ ul li {
 
     display: flex;
     position: relative;
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     align-items: center;
     justify-content: center;
     transform: rotate(-15deg) skew(15deg);
@@ -43,8 +43,8 @@ ul li span{
     justify-content: center;
     position: absolute;
     background-color: #dd4b39;
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
     transition: 0.3s;
     text-align: center;
       

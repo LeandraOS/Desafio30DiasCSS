@@ -1,0 +1,172 @@
+body {
+  background-image: url('space.jpg');
+}
+
+main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 98vw;
+  height: 100vh;
+}
+
+.title {
+  position: absolute;
+  font-family: 'Indie Flower', cursive;
+  font-size: 40px;
+  margin-top: 240px;
+  color: white;
+  animation: bip 3.5s linear infinite;
+}
+
+@keyframes bip {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+  animation: cursor 1.0s linear infinite;
+}
+
+.ball {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  top: 100px;
+  margin: 1vmin;
+  transform-style: preserve-3d;
+  transform: rotateX(-5deg);
+  transform: rotate3d(360deg);
+  animation: load 3s infinite linear;
+  border: 3px dashed black;
+  box-shadow: 3px 8px 5px 1px rgba(72, 74, 99, 0.753) inset;
+}
+
+@keyframes load {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rot {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(0deg) rotateZ(0deg);
+  }
+}
+
+.layer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 12vmin;
+  height: 12vmin;
+}
+
+.moving {
+  transform-style: preserve-3d;
+  transform-origin: 49vmin 49vmin;
+  animation: rot 10s linear infinite;
+}
+
+.clip {
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translateZ(-0vmin);
+}
+
+@keyframes highlightanim {
+  0.00% {
+    left: -150.00%;
+    top: -178.00%
+  }
+  12.50% {
+    left: -117.67%;
+    top: -179.64%
+  }
+  25.00% {
+    left: -97.69%;
+    top: -195.87%
+  }
+  28.75% {
+    left: -95.00%;
+    top: -207.09%
+  }
+  32.50% {
+    left: -97.69%;
+    top: -220.70%
+  }
+  40.00% {
+    left: -117.67%;
+    top: -240.01%
+  }
+  47.50% {
+    left: -150.00%;
+    top: -247.50%
+  }
+  55.00% {
+    left: -182.33%;
+    top: -240.01%
+  }
+  62.50% {
+    left: -202.31%;
+    top: -220.70%
+  }
+  68.75% {
+    left: -205.00%;
+    top: -207.09%
+  }
+  75.00% {
+    left: -202.31%;
+    top: -195.87%
+  }
+  87.50% {
+    left: -182.33%;
+    top: -179.64%
+  }
+  100.00% {
+    left: -150.00%;
+    top: -178.00%
+  }
+}
+
+.shade {
+  position: relative;
+  top: -150%;
+  left: -150%;
+  width: 400%;
+  height: 400%;
+  background: radial-gradient(at 50% 50%, rgb(231, 146, 97), #441909, #160101, black, black);
+  animation: highlightanim 5s linear infinite;
+}
